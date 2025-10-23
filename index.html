@@ -1,1 +1,142 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Haven ☕</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://widget.va-e0f.workers.dev/widget.js" data-store="demo123" data-debug="true" async></script>
+  </head>
+  <body class="bg-amber-50 text-stone-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-amber-800">☕ Brew Haven</h1>
+        <nav class="space-x-6 text-sm font-medium">
+          <a href="#" class="hover:text-amber-600">Home</a>
+          <a href="#" class="hover:text-amber-600">Shop</a>
+          <a href="#" class="hover:text-amber-600">About</a>
+          <a href="#" class="hover:text-amber-600">Contact</a>
+        </nav>
+        <button class="bg-amber-700 text-white px-4 py-2 rounded-lg hover:bg-amber-800">
+          Cart (2)
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white"
+    >
+      <div class="bg-black/60">
+        <div class="max-w-7xl mx-auto text-center py-32 px-4">
+          <h2 class="text-4xl md:text-6xl font-bold mb-6">
+            Freshly Roasted Coffee Beans
+          </h2>
+          <p class="text-lg mb-8">
+            Handpicked, small-batch coffee delivered to your door.
+          </p>
+          <a
+            href="#shop"
+            class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg text-lg font-medium"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="shop" class="max-w-7xl mx-auto py-16 px-4">
+      <h3 class="text-3xl font-semibold text-center mb-10">
+        Our Best Sellers
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80"
+            alt="Ethiopian Roast"
+            class="rounded-xl mb-4 w-full h-56 object-cover"
+          />
+          <h4 class="text-xl font-bold">Ethiopian Roast</h4>
+          <p class="text-sm text-stone-600 mt-2 mb-4">
+            Floral and fruity notes with a smooth finish.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-lg font-semibold">$14.99</span>
+            <button
+              class="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-amber-800 text-sm"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+            alt="Colombian Dark"
+            class="rounded-xl mb-4 w-full h-56 object-cover"
+          />
+          <h4 class="text-xl font-bold">Colombian Dark</h4>
+          <p class="text-sm text-stone-600 mt-2 mb-4">
+            Bold and rich — perfect for espresso lovers.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-lg font-semibold">$16.49</span>
+            <button
+              class="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-amber-800 text-sm"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img
+            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
+            alt="Brazilian Blend"
+            class="rounded-xl mb-4 w-full h-56 object-cover"
+          />
+          <h4 class="text-xl font-bold">Brazilian Blend</h4>
+          <p class="text-sm text-stone-600 mt-2 mb-4">
+            Chocolatey sweetness and nutty aroma.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-lg font-semibold">$13.50</span>
+            <button
+              class="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-amber-800 text-sm"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-amber-100 py-20 px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6">Why Choose Brew Haven?</h3>
+      <p class="max-w-3xl mx-auto text-lg text-stone-700">
+        We believe coffee should be more than just a drink — it’s a ritual.
+        That’s why we roast only ethically sourced beans and deliver them
+        freshly packed right to your home.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-10">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">&copy; 2025 Brew Haven. All rights reserved.</p>
+        <div class="mt-4 space-x-6">
+          <a href="#" class="hover:text-amber-500">Privacy Policy</a>
+          <a href="#" class="hover:text-amber-500">Terms</a>
+          <a href="#" class="hover:text-amber-500">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
